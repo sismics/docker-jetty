@@ -1,7 +1,7 @@
 #
-# Dockerfile for Debian + Play Framework
+# Dockerfile for Debian + Jetty Web Server
 
-FROM sismics/debian-java:8.102.1
+FROM sismics/debian-java:7.79.1
 MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 
 # Download and install Jetty
