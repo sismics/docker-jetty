@@ -8,7 +8,7 @@ MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV JETTY_VERSION 9.2.20.v20161216
 RUN wget -nv -O /tmp/jetty.tar.gz \
-    "http://eclipse.org/downloads/download.php?file=/jetty/${JETTY_VERSION}/dist/jetty-distribution-${JETTY_VERSION}.tar.gz&r=1" \
+    "http://central.maven.org/maven2/org/eclipse/jetty/jetty-distribution/${JETTY_VERSION}/jetty-distribution-${JETTY_VERSION}.tar.gz" \
     && tar xzf /tmp/jetty.tar.gz -C /opt \
     && mv /opt/jetty* /opt/jetty \
     && useradd jetty -U -s /bin/false \
