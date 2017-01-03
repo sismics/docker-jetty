@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t sismics/jetty:9.3.11-jdk7 .
+docker build -t sismics/jetty:9.2.20-jdk7 .
