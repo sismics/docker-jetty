@@ -6,9 +6,9 @@ MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 
 # Download and install Jetty
 ENV DEBIAN_FRONTEND noninteractive
-ENV JETTY_VERSION 9.3.11.v20160721
+ENV JETTY_VERSION 9.4.12.v20180830
 RUN wget -nv -O /tmp/jetty.tar.gz \
-    "http://eclipse.org/downloads/download.php?file=/jetty/${JETTY_VERSION}/dist/jetty-distribution-${JETTY_VERSION}.tar.gz&r=1" \
+    "https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/${JETTY_VERSION}/jetty-distribution-${JETTY_VERSION}.tar.gz" \
     && tar xzf /tmp/jetty.tar.gz -C /opt \
     && mv /opt/jetty* /opt/jetty \
     && useradd jetty -U -s /bin/false \
